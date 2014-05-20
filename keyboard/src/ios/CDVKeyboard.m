@@ -164,7 +164,7 @@
 
     // No-op on iOS7.  It already resizes webview by default, and this plugin is causing layout issues
     // with fixed position elements.  We possibly should attempt to implement shringview = false on iOS7.
-    if (!IsAtLeastiOSVersion(@"7.0")) {
+    //if (!IsAtLeastiOSVersion(@"7.0")) {
         if (ashrinkView) {
             [nc removeObserver:_shrinkViewKeyboardShowObserver];
             _shrinkViewKeyboardShowObserver = [nc addObserverForName:UIKeyboardWillShowNotification
@@ -196,7 +196,7 @@
                     }];
             }
         }
-    }
+    //}
 
     _shrinkView = ashrinkView;
 }
