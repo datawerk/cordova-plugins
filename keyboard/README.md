@@ -1,7 +1,7 @@
-Keyboard
+CordovaKeyboard
 ======
 
-> The `Keyboard` object provides some functions to customize the iOS keyboard.
+> The `CordovaKeyboard` object provides some functions to customize the iOS keyboard.
 
 This plugin has only been tested in Cordova 3.2 or greater, and its use in previous Cordova versions is not recommended (potential conflict with keyboard customization code present in the core in previous Cordova versions). 
 
@@ -12,22 +12,22 @@ This plugin supports the __HideKeyboardFormAccessoryBar__ (boolean) and __Keyboa
 Methods
 -------
 
-- Keyboard.shrinkView
-- Keyboard.hideFormAccessoryBar
-- Keyboard.disableScrollingInShrinkView
+- CordovaKeyboard.shrinkView
+- CordovaKeyboard.hideFormAccessoryBar
+- CordovaKeyboard.disableScrollingInShrinkView
 
 Properties
 --------
 
-- Keyboard.isVisible
+- CordovaKeyboard.isVisible
 
 Events
 --------
 
-- Keyboard.onshow
-- Keyboard.onhide
-- Keyboard.onshowing
-- Keyboard.onhiding
+- CordovaKeyboard.onshow
+- CordovaKeyboard.onhide
+- CordovaKeyboard.onshowing
+- CordovaKeyboard.onhiding
 
 
 Permissions
@@ -35,16 +35,16 @@ Permissions
 
 #### config.xml
 
-            <feature name="Keyboard">
+            <feature name="CordovaKeyboard">
                 <param name="ios-package" value="CDVKeyboard" onload="true" />
             </feature>
 
-Keyboard.shrinkView
+CordovaKeyboard.shrinkView
 =================
 
 Shrink the WebView when the keyboard comes up.
 
-    Keyboard.shrinkView(true);
+    CordovaKeyboard.shrinkView(true);
 
 Description
 -----------
@@ -60,15 +60,15 @@ Supported Platforms
 Quick Example
 -------------
 
-    Keyboard.shrinkView(true);
-    Keyboard.shrinkView(false);
+    CordovaKeyboard.shrinkView(true);
+    CordovaKeyboard.shrinkView(false);
 
-Keyboard.hideFormAccessoryBar
+CordovaKeyboard.hideFormAccessoryBar
 =================
 
 Hide the keyboard toolbar.
 
-    Keyboard.hideFormAccessoryBar(true);
+    CordovaKeyboard.hideFormAccessoryBar(true);
 
 Description
 -----------
@@ -84,16 +84,16 @@ Supported Platforms
 Quick Example
 -------------
 
-    Keyboard.hideFormAccessoryBar(true);
-    Keyboard.hideFormAccessoryBar(false);
+    CordovaKeyboard.hideFormAccessoryBar(true);
+    CordovaKeyboard.hideFormAccessoryBar(false);
 
 
-Keyboard.disableScrollingInShrinkView
+CordovaKeyboard.disableScrollingInShrinkView
 =================
 
 Disable scrolling when the the WebView is shrunk.
 
-    Keyboard.disableScrollingInShrinkView(true);
+    CordovaKeyboard.disableScrollingInShrinkView(true);
 
 Description
 -----------
@@ -109,15 +109,15 @@ Supported Platforms
 Quick Example
 -------------
 
-    Keyboard.disableScrollingInShrinkView(true);
-    Keyboard.disableScrollingInShrinkView(false);
+    CordovaKeyboard.disableScrollingInShrinkView(true);
+    CordovaKeyboard.disableScrollingInShrinkView(false);
 
-Keyboard.isVisible
+CordovaKeyboard.isVisible
 =================
 
 Determine if the keyboard is visible.
 
-    if (Keyboard.isVisible) {
+    if (CordovaKeyboard.isVisible) {
         // do something
     }
 
@@ -132,13 +132,13 @@ Supported Platforms
 
 - iOS
 
-Keyboard.automaticScrollToTopOnHiding
+CordovaKeyboard.automaticScrollToTopOnHiding
 =================
 
 Specifies whenether content of page would be autoamtically scrolled to the top of the page
 when keyboard is hiding.
 
-    Keyboard.automaticScrollToTopOnHiding = true;
+    CordovaKeyboard.automaticScrollToTopOnHiding = true;
 
 Description
 -----------
@@ -153,12 +153,12 @@ Supported Platforms
 
 - iOS
 
-Keyboard.onshow
+CordovaKeyboard.onshow
 =================
 
 If defined, this function fired when keyboard fully shown.
 
-    Keyboard.onshow = function () {
+    CordovaKeyboard.onshow = function () {
         // Describe your logic which will be run each time keyboard is shown.
     }
 
@@ -173,12 +173,12 @@ Supported Platforms
 
 - iOS
 
-Keyboard.onhide
+CordovaKeyboard.onhide
 =================
 
 If defined, this function fired when keyboard fully closed.
 
-    Keyboard.onhide = function () {
+    CordovaKeyboard.onhide = function () {
         // Describe your logic which will be run each time keyboard is closed.
     }
 
@@ -193,12 +193,12 @@ Supported Platforms
 
 - iOS
 
-Keyboard.onshowing
+CordovaKeyboard.onshowing
 =================
 
 If defined, this function fired before keyboard will be shown.
 
-    Keyboard.onshowing = function () {
+    CordovaKeyboard.onshowing = function () {
         // Describe your logic which will be run each time when keyboard is about to be shown.
     }
 
@@ -213,12 +213,12 @@ Supported Platforms
 
 - iOS
 
-Keyboard.onhiding
+CordovaKeyboard.onhiding
 =================
 
 If defined, this function fired when keyboard fully closed.
 
-    Keyboard.onhiding = function () {
+    CordovaKeyboard.onhiding = function () {
         // Describe your logic which will be run each time when keyboard is about to be closed.
     }
 
