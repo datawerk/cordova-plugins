@@ -14,14 +14,14 @@
 		<engine name="cordova" version=">=3.2.0" />
 	</engines>
 
-    <js-module src="www/keyboard.js" name="keyboard">
-    	<clobbers target="window.Keyboard" />
+    <js-module src="www/keyboard.js" name="cordovakeyboard">
+    	<clobbers target="window.CordovaKeyboard" />
     </js-module>
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="Keyboard">
+            <feature name="CordovaKeyboard">
                 <param name="ios-package" value="CDVKeyboard" onload="true" />
             </feature>
         </config-file>
