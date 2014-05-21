@@ -117,7 +117,7 @@
                                                                      queue:[NSOperationQueue mainQueue]
                                                                 usingBlock:^(NSNotification* notification) {
                 // we can't hide it here because the accessory bar hasn't been created yet, so we delay on the queue
-                [weakSelf performSelector:@selector(formAccessoryBarKeyboardWillShow:) withObject:notification afterDelay:0.3];
+                [weakSelf performSelector:@selector(formAccessoryBarKeyboardWillShow:) withObject:notification afterDelay:1.0];
             }];
 
         [nc removeObserver:_hideFormAccessoryBarKeyboardHideObserver];
